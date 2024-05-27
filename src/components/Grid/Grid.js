@@ -340,9 +340,9 @@ const Grid = () => {
               Speed
               <input value={speed}
                      onInput={e =>
-                       setSpeed(Math.min(Math.max(+e.target.value, 1), 10))}
+                       setSpeed(Math.min(Math.max(+e.target.value, 1), 100))}
                      className={styles.inputWeight}
-                     type="number" min="1" max="10"/>
+                     type="number" min="1" max="100"/>
             </label></li>
             <li>{pathLengthMessage}</li>
           </ul>
